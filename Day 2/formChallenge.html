@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Form mini challenge</title>
+    </head>
+    <body>
+        <!-- Create some example forms. Your forms must include the an example of each of the following input types:
+ 
+        Radio buttons
+        Checkboxes
+        File Upload Input
+        A Textarea
+        A Dropdown List -->
+        <h1>Sign-up form</h1>
+        <form action="./confirmation.html">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+            <br /><br />
+            <label for="email">Email:</label>
+            <input
+                type="email"
+                name="email"
+                id="email"
+                required
+                placeholder="email@email.com"
+            />
+            <br /><br />
+            <label for="tel">Telephone:</label>
+            <input type="tel" name="tel" id="tel" placeholder="012345678" />
+            <!-- radio buttons -->
+            <p>What is your favourite pet?</p>
+            <label for="dog">Dog</label>
+            <input type="radio" name="favouritePet" id="dog" />
+            <label for="cat">Cat</label>
+            <input type="radio" name="favouritePet" id="cat" />
+            <label for="none">Cat</label>
+            <input type="radio" name="favouritePet" id="none" />
+            <!-- checkbox -->
+            <p>What is your favourite colour?</p>
+            <label for="colour1">Red</label>
+            <input type="checkbox" name="red" id="colour1" />
+            <label for="colour2">Blue</label>
+            <input type="checkbox" name="blue" id="colour2" />
+            <label for="colour3">Orange</label>
+            <input type="checkbox" name="orange" id="colour3" />
+            <label for="colour4">Yellow</label>
+            <input type="checkbox" name="Yellow" id="colour4" />
+            <br /><br />
+            <!-- textarea -->
+            <label for="background" style="display: block">About me:</label>
+            <textarea
+                name="background"
+                id="background"
+                cols="30"
+                rows="5"
+            ></textarea>
+            <br /><br />
+            <!-- dropdown -->
+            <label for="car">What car do you own?</label>
+            <select name="car" id="car">
+                <option value="none">None</option>
+                <option value="toyota">Toyota</option>
+                <option value="ford">Ford</option>
+                <option value="honda">Honda</option>
+                <option value="nissan">Nissan</option>
+                <option value="renault">Renault</option>
+            </select>
+            <br /><br />
+            <!-- file upload -->
+            <label for="avatar">Upload your avatar:</label>
+            <input type="file" name="avatar" id="avatar" />
+            <br /><br />
+            <!-- form buttons -->
+            <input type="reset" />
+            <input type="submit" />
+        </form>
+    </body>
+</html>
